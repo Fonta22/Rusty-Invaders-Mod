@@ -151,9 +151,12 @@ impl<'a> GameManager<'a> {
       let random_index: usize = self.rng.gen_range(0..self.enemies.entities.len());
       let random_enemy = self.enemies.entities[random_index];
 
+      let spawn_x = random_enemy.transform.x + ENEMY_WIDTH / 2.0;
+      let spawn_y = random_enemy.transform.y + ENEMY_HEIGHT;
+
       self.bullets.push(Bullet::spawn(
-        &random_enemy.transform.x,
-        &random_enemy.transform.y,
+        &spawn_x,
+        &spawn_y,
         Vector2 { x: 1.0, y: -1.0 },
         ENEMY_BULLET_ACCELERATION,
         ENEMY_BULLET_VELOCITY,
