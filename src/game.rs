@@ -98,27 +98,27 @@ impl<'a> GameManager<'a> {
       if self.player_lost {
         draw_text(
           color::WHITE,
-          26,
-          Vector2 { x: 20.0, y: 60.0 },
+          48,
+          Vector2 { x: 25.0, y: 80.0 },
           format!("ROUNDS: {}", self.rounds),
         );
         draw_text(
           color::WHITE,
-          26,
-          Vector2 { x: 20.0, y: 100.0 },
+          48,
+          Vector2 { x: 25.0, y: 160.0 },
           format!("SCORE: {}", self.score),
         );
         draw_text(
           color::WHITE,
-          26,
-          Vector2 { x: 20.0, y: 140.0 },
-          String::from("SKILL ISSUE"),
+          48,
+          Vector2 { x: 25.0, y: 240.0 },
+          String::from("GAME OVER"),
         );
       } else {
         draw_text(
           color::WHITE,
-          12,
-          Vector2 { x: 20.0, y: 50.0 },
+          48,
+          Vector2 { x: 25.0, y: 90.0 },
           format!("{}", self.score),
         );
       }
