@@ -10,5 +10,3 @@ pub const PLAYER_EXPLOSION_SOUND_NAME: &str = "player_explosion.wav";
 pub const ENEMY_EXPLOSION_SOUND_NAME: &str = "enemy_explosion.wav";
 pub const PLAYER_HIT_SOUND_NAME: &str = "hit.wav";
 pub const PLAYER_LASER_SHOOT_SOUND_NAME: &str = "laser_shoot.wav";
-
-pub const FONT_NAME: &str = "AmazS.T.A.L.K.E.R.v.3.0.ttf";

@@ -47,3 +47,5 @@ pub const ENEMY_BULLET_ACCELERATION: Vector2<f64> = Vector2 { x: 0.0, y: 0.0 };
 pub const ENEMY_BULLET_VELOCITY: Vector2<f64> = Vector2 { x: 0.0, y: 16.0 };
 
 pub const PLAYER_BULLETS_FREQUENCY: u32 = 5;
+
+pub const FONT_NAME: &str = "AmazS.T.A.L.K.E.R.v.3.0.ttf";
